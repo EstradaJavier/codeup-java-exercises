@@ -1,6 +1,7 @@
 import java.text.DecimalFormat;
 import java.util.Date;
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class ControlFlowExercises {
 
@@ -52,17 +53,17 @@ public class ControlFlowExercises {
 //                System.out.println((int) + i);
 //            }
 
-//        for (int i = 1; i < 100; i++) {
-//            if (i % 15 == 0) {
-//                System.out.println("FizzBuzz");
-//            } else if (i % 3 == 0) {
-//                System.out.println("Fizz");
-//            } else if (i % 5 == 0) {
-//                System.out.println("Buzz");
-//            } else {
-//                System.out.println(i);
-//            }
-//        }
+        for (int i = 1; i < 100; i++) {
+            if (i % 15 == 0) {
+                System.out.println(" -- FizzBuzz");
+            } else if (i % 3 == 0) {
+                System.out.println(" -- Fizz");
+            } else if (i % 5 == 0) {
+                System.out.println(" -- Buzz");
+            } else {
+                System.out.println(i);
+            }
+        }
 
         // Here is my powers table
 //        What number would you like to go up to? 5
@@ -76,14 +77,19 @@ public class ControlFlowExercises {
 //        4      | 16      | 64
 //        5      | 25      | 125
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter your nember : ");
-        int userInput = sc.nextInt();
-
-        // for loop to build my table like the example
-        for(int i = 0; i < usertInput; i++) {
-            System.out.println("Here is your number %d", uertInput);
-        }
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Please enter your number : ");
+//        int userInput = sc.nextInt();
+//
+//        System.out.print("Here is your table");
+//        System.out.print(" ");
+//        System.out.print("Number" + "   |   " + "Squared" + "   |   " + "   |   "Cubed);
+//        System.out.print("Here is your table");
+//
+//        // for loop to build my table like the example
+//        for(int i = 0; i < usertInput; i++) {
+//            System.out.println();
+//        }
     }
 }
 
