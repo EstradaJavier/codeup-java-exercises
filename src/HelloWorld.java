@@ -1,49 +1,126 @@
-// My First Hello World Program
-// https://www.ssec.wisc.edu/~tomw/java/unicode.html
+// Java program to read data of various types using Scanner class.
 
-class HelloWorld {
+import java.text.DecimalFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+
+public class HelloWorld {
+
     public static void main(String[] args) {
+        /* TODO: use the scanner to take in the name of the month you were
+        born and print it back out
+        */
 
-//        int myFavoriteNumber = 128;
-//        System.out.println(myFavoriteNumber);
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("What is your favorite quote: ");
+//        String quote = sc.nextLine();
+//        System.out.println(quote);
+//
+//
+//        System.out.printf("Please enter your age: ");
+//        int age = sc.nextInt();
+//        System.out.println("Your are " + age + " years old");
+//
+//        Date date = new Date();
+//        System.out.println("Today's date is: " + date);
+//
+//
+//        /* TODO: use the scanner to take in your birthday as an integer and then name
+//            of the month you were born and print it back out
+//            - remember to first prompt the user for the birthday day of the month and
+//            store as an integer
+//            - next take in name of the month with .nextLine()
+//            - print out the result
+//            - use a fix to prevent the month name input from being skipped
+//            Collapse
+//        */
+//        System.out.print("Please enter the day of the month you were born: ");
+//        int day = sc.nextInt(); // 9\
+//        System.out.printf("Please enter the month that you were born in: ");
+//        sc.nextLine();  // clears out the new line
+//        String month = sc.nextLine();
+//        System.out.println("You were born " + month + " / " + day);
+//
+//
+//        double number = 0.9999999999999;
+//        DecimalFormat numberFormat = new DecimalFormat("#.00");
+//        System.out.println(numberFormat.format(number));
+//
+//        double pi = 3.14159;
+//        System.out.printf("The value of pi is approximately %.2f", pi);
+
+// ==================== Slide 3
+
+        // no >== ,or <==, or === because only value comparisons are available
+        // truthy and falsy values don't exist in Java
 
 
-//        String myString = "Javier Loves Java";
-//        System.out.println(myString);
+        // ==================== Slide 5
 
-//        int x = 5;
-//        System.out.println(x++);
-//        System.out.println(x);
+        // && will only check second value if first is true
+        // & will check both
+        // this can be used to check what would otherwise result in a syntax error
+        // same comparison process for || and |
 
-//        int x = 5;
-//        System.out.println(++x);
-//        System.out.println(x);
-
-//        String theNumberThree = "three";
-//        Object o = theNumberThree;
-//        int three = (int) o;
-
-//        int three = (int) "three";
-
-
-//        int x = 4;
-//        x = x + 5;
-
-//        int x = 3;
-//        int y = 4;
-//        y = y * x;
-
-//        int x = 10;
-//        int y = 2;
-//        x = x / y;
-//        y = y - x;
-
-        String theNumberThree = "three";
-        Object o = theNumberThree;
-//        int three = (int) o;
-        System.out.println(o);
+        // x will only increment in second condition if first condition is true using &&
+//                int x = 2;
+//                int y = 3;
+//
+//                if (false && ++x == y) {
+//                    System.out.println("Equal");
+//                } else {
+//                    System.out.println("Not equal");;
+//                }
+//                System.out.println(x);
 
 
+        // ==================== Slide 7
+
+        // DO NOT COMPARE STRINGS WITH == !!!!
+
+//                Scanner sc = new Scanner(System.in);
+//                String cat1 = sc.nextLine();
+//                String cat2 = "cat";
+//                System.out.println(cat1);
+//                System.out.println(cat2);
+//                System.out.println(cat1 == cat2);
+
+        // do use equals(),
+
+//    boolean stringValuesAreEqual = "Test".equals("Tes");
+//    System.out.printf("The result is: %s", stringValuesAreEqual);
+
+
+        // or use equalsIgnoreCase()
+
+//String hello = "hello";
+//System.out.println(hello.equalsIgnoreCase("HeLlO"));
+
+        // does not equal
+
+//String tech = "tech";
+//System.out.println(!tech.equalsIgnoreCase("tool"));
+
+
+
+        // ==================== Slides 8 - 16
+
+        // basically the same as JS :)
+
+
+//            String caseSwitch = "Fred";
+//            switch (caseSwitch) {
+//                case "bob":
+//                    System.out.println("Case 1");
+//                    break;
+//                case "fred":
+//                    System.out.println("Case 2");
+//                    break;
+//                default :
+//                    System.out.println("Default case");
+//                    break;
+//            }
 
 
 
@@ -51,76 +128,3 @@ class HelloWorld {
 
     }
 }
-
-
-
-//Exercises
-//        You should complete all of the following inside of your main method from the previous exercise. After each
-//        step, compile and run your code.
-//
-//        Create an int variable named myFavoriteNumber and assign your favorite number to it, then print it out
-//        to the console.
-//
-//        Create a String variable named myString and assign a string value to it, then print the variable out to the console.
-//
-//        Change your code to assign a character value to myString. What do you notice?
-//
-//        Change your code to assign the value 3.14159 to myString. What happens?
-//
-//        Declare an long variable named myNumber, but do not assign anything to it. Next try to print out myNumber to the console. What happens?
-//
-//        Change your code to assign the value 3.14 to myNumber. What do you notice?
-//
-//        Change your code to assign the value 123L (Note the 'L' at the end) to myNumber.
-//
-//        Change your code to assign the value 123 to myNumber.
-//
-//        Why does assigning the value 3.14 to a variable declared as a long not compile, but assigning an integer value does?
-//
-//        Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this?
-//
-//        Copy and paste the following code blocks one at a time and execute them
-//
-//
-//        int x = 5;
-//        System.out.println(x++);
-//        System.out.println(x);
-//
-//        int x = 5;
-//        System.out.println(++x);
-//        System.out.println(x);
-//        What is the difference between the above code blocks? Explain why the code outputs what it does.
-//
-//        Try to create a variable named class. What happens?
-//
-//        Object is the most generic type in Java. You can assign any value to a variable of type Object. What do you think will happen when the following code is run?
-//
-//
-//        String theNumberThree = "three";
-//        Object o = theNumberThree;
-//        int three = (int) o;
-//        Copy and paste the code above and then run it. Does the result match with your expectation?
-//
-//        How is the above example different from the code block below?
-//
-//
-//        int three = (int) "three";
-//        What are the two different types of errors we are observing?
-//
-//        Rewrite the following expressions using the relevant shorthand assignment operators:
-//
-//
-//        int x = 4;
-//        x = x + 5;
-//
-//        int x = 3;
-//        int y = 4;
-//        y = y * x;
-//
-//        int x = 10;
-//        int y = 2;
-//        x = x / y;
-//        y = y - x;
-//        What happens if you assign a value to a numerical variable that is larger (or smaller) than the type can hold? What happens if you increment a numeric variable past the type's capacity?
-//
-//        Hint: Integer.MAX_VALUE is a class constant (we'll learn more about these later) that holds the maximum value for the int type.
