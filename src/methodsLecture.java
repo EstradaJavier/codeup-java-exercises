@@ -5,7 +5,11 @@ public class methodsLecture {
     public static void main(String[] args) {
 
 // ============== Method Definitions ===============
-        printMultiplicationProduct(int x, int y)
+        printMultiplicationProduct(int x, int y) {
+            return
+        }
+
+        String name1 = "Javier";
 
 
 // *** Access Modifiers ***
@@ -30,15 +34,17 @@ public class methodsLecture {
          * */
 
         public static int multiply(int x, int y) {
-            return x * y;
+            System.out.println("Hello, $s\n", name );
         }
 
-        public static void printMultiplicationProduct(x, y) {
-            System.out.println(multiply(x, y));
+        public static void printMultiplicationProduct(String  name1, String name2) {
+            System.out.println("Hello, $s\n", name);
         }
 
         public static void multiplyUserInput(){
-            Scanner sc = new
+            System.out.println("Hello, $s\n", name );
+
+
         }
 
 
@@ -47,6 +53,24 @@ public class methodsLecture {
 
 
 // ============== Mini Exercise #2 =================
+        /* TODO: Write a set of overloaded public static void methods which can take in 1-3 names and print them to the console
+         *   -Call each of the methods, passing in the names for each
+         *   -Minus 1000pts if you don't use an oxford comma on the 3 param version
+         *   BONUS: Use the Scanner class to get the names from user input
+         *  */
+
+        public static void stringName(Strin name) {
+            System.out.println("Hello");
+        }
+
+        public static void stringName(string, name1) {
+            return name1;
+        }
+
+        public static void stringName(String, name1, name2) {
+            return name1, name2;
+            return name2;
+        }
 
 
 
