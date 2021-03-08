@@ -5,9 +5,6 @@ public class methodsLecture {
     public static void main(String[] args) {
 
 // ============== Method Definitions ===============
-        printMultiplicationProduct(int x, int y) {
-            return
-        }
 
         String name1 = "Javier";
 
@@ -22,7 +19,6 @@ public class methodsLecture {
 // *** Returning vs Void ***
 
 
-
 // *** Parameters ***
 
 // ============== Mini Exercise #1 =================
@@ -33,19 +29,7 @@ public class methodsLecture {
          *   BONUS: Use the Scanner class to get the numbers from the user input
          * */
 
-        public static int multiply(int x, int y) {
-            System.out.println("Hello, $s\n", name );
-        }
 
-        public static void printMultiplicationProduct(String  name1, String name2) {
-            System.out.println("Hello, $s\n", name);
-        }
-
-        public static void multiplyUserInput(){
-            System.out.println("Hello, $s\n", name );
-
-
-        }
 
 
 // ============== Method Overloading ===============
@@ -59,18 +43,7 @@ public class methodsLecture {
          *   BONUS: Use the Scanner class to get the names from user input
          *  */
 
-        public static void stringName(Strin name) {
-            System.out.println("Hello");
-        }
 
-        public static void stringName(string, name1) {
-            return name1;
-        }
-
-        public static void stringName(String, name1, name2) {
-            return name1, name2;
-            return name2;
-        }
 
 
 
