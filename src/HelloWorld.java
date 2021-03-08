@@ -1,130 +1,129 @@
 // Java program to read data of various types using Scanner class.
 
-import java.text.DecimalFormat;
-import java.util.Date;
-import java.util.Scanner;
-
+//import java.text.DecimalFormat;
+//import java.util.Date;
+//import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class HelloWorld {
 
     public static void main(String[] args) {
-        /* TODO: use the scanner to take in the name of the month you were
-        born and print it back out
-        */
 
-//        Scanner sc = new Scanner(System.in);
-//        System.out.print("What is your favorite quote: ");
-//        String quote = sc.nextLine();
-//        System.out.println(quote);
+//        int[] numbers = new int[5];
+//        numbers[0] = 1;
+//        numbers[1] = 2;
 //
+//        System.out.println(Arrays.toString(numbers));
+
+
+        String myName = "Javier P. Estrada";
+        System.out.println(myName.replace("J", "X" ));
+
+
+//            // excape characters: "My name  is:\t \"AleshaE\""; Prints: "Alesha"
+//            String newName = "My soulmate is:\t \"AleshaE\"";
+//            System.out.println(newName);
+
+        int[] numbers = { 7, 2, 13, 11, 51, 9, 17, 18, 91, 20 };
+        System.out.println(Arrays.toString(numbers.sort()));
+
+
+
+
+
+        //        .equals(String anotherString)
+//        String one = "2";
+//        String two = "2";
+//        System.out.println(one.equals(two));
+
+
+//        .equalsIgnoreCase(String anotherString)
+//        String greeting = "howdy";
+//        System.out.println(greeting.equalsIgnoreCase("HoWDy"));
+
+//        .startsWith(String prefix)
+//       String title = "Dr. Doctor";
+//        boolean isADoctor = title.toLowerCase().startsWith("dr");
+//        System.out.println(isADoctor);
+
+//       .endsWith(String suffix)
+//        String travisParkAddress = "311 E Travis St, San Antonio, TX 78205";
+//        String codeUpZip = "78205";
+//        boolean sameZipAsCodeup = travisParkAddress.endsWith(codeUpZip);
 //
-//        System.out.printf("Please enter your age: ");
-//        int age = sc.nextInt();
-//        System.out.println("Your are " + age + " years old");
+//        System.out.println(sameZipAsCodeup);
+
+
+//        .charAt(int index)
+        // consider that this method returns a char type and not a String type
+
+//        boolean firstLetterCapitalized = false;
+//        String word = "test";
 //
-//        Date date = new Date();
-//        System.out.println("Today's date is: " + date);
+//        char firstLetter = word.charAt(0);
 //
+//        if (firstLetter == Character.toUpperCase(firstLetter)) {
+//            firstLetterCapitalized = true;
+//        }
 //
-//        /* TODO: use the scanner to take in your birthday as an integer and then name
-//            of the month you were born and print it back out
-//            - remember to first prompt the user for the birthday day of the month and
-//            store as an integer
-//            - next take in name of the month with .nextLine()
-//            - print out the result
-//            - use a fix to prevent the month name input from being skipped
-//            Collapse
-//        */
-//        System.out.print("Please enter the day of the month you were born: ");
-//        int day = sc.nextInt(); // 9\
-//        System.out.printf("Please enter the month that you were born in: ");
-//        sc.nextLine();  // clears out the new line
-//        String month = sc.nextLine();
-//        System.out.println("You were born " + month + " / " + day);
+//        System.out.println(firstLetterCapitalized);
+
+//        .indexOf(String subString)
+//        String cat = "cat";
+//        System.out.println(cat.indexOf("at"));
+
+//        .lastIndexOf(String subString)
+//        String good = "Good";
+//        System.out.println(good.indexOf("o"));
+
+//        .length()
+//        String longestWord = "pneumonoultramicroscopicsilicovolcanoconiosis";
+//        System.out.println(longestWord.length());
+
+//        .replace(char oldChar, char newChar)
+//        String search = "tiny cats looking cute";
+//        String parsedSearch = search.replace("cats", "dogs");
+//        System.out.println(parsedSearch);
+
+//        .substring(int beginIndex[, int endIndex])
+//        String name = "Justin Bob Reich";
+//        String firstName = name.substring(0, name.indexOf(" "));
 //
+//        String lastName = name.substring(name.lastIndexOf(" ") + 1);
+//        System.out.println(firstName);
+//        System.out.println(lastName);
+
+//        String name = "Justin Reich";
+//        String firstName = name.substring(0, name.indexOf(" "));
+//        System.out.println(firstName);
+//        String lastName = name.substring(firstName.length() + 1);
+//        System.out.println(lastName);
+
+
+
+//        .toLowerCase()
+//        .toUpperCase(
+//        String hello = "hELlo";
+//        System.out.println(hello.toUpperCase());
+//        System.out.println(hello.toLowerCase());
+//        System.out.println(hello)
+
+//        .trim(
+//        String input = "   bob      smith \n\n  ";
+//        String trimmedInput = input.trim();
+//        System.out.println(trimmedInput);
 //
-//        double number = 0.9999999999999;
-//        DecimalFormat numberFormat = new DecimalFormat("#.00");
-//        System.out.println(numberFormat.format(number));
-//
-//        double pi = 3.14159;
-//        System.out.printf("The value of pi is approximately %.2f", pi);
-
-// ==================== Slide 3
-
-        // no >== ,or <==, or === because only value comparisons are available
-        // truthy and falsy values don't exist in Java
-
-
-        // ==================== Slide 5
-
-        // && will only check second value if first is true
-        // & will check both
-        // this can be used to check what would otherwise result in a syntax error
-        // same comparison process for || and |
-
-        // x will only increment in second condition if first condition is true using &&
-//                int x = 2;
-//                int y = 3;
-//
-//                if (false && ++x == y) {
-//                    System.out.println("Equal");
-//                } else {
-//                    System.out.println("Not equal");;
-//                }
-//                System.out.println(x);
-
-
-        // ==================== Slide 7
-
-        // DO NOT COMPARE STRINGS WITH == !!!!
-
-//                Scanner sc = new Scanner(System.in);
-//                String cat1 = sc.nextLine();
-//                String cat2 = "cat";
-//                System.out.println(cat1);
-//                System.out.println(cat2);
-//                System.out.println(cat1 == cat2);
-
-        // do use equals(),
-
-//    boolean stringValuesAreEqual = "Test".equals("Tes");
-//    System.out.printf("The result is: %s", stringValuesAreEqual);
-
-
-        // or use equalsIgnoreCase()
-
-//String hello = "hello";
-//System.out.println(hello.equalsIgnoreCase("HeLlO"));
-
-        // does not equal
-
-//String tech = "tech";
-//System.out.println(!tech.equalsIgnoreCase("tool"));
-
-
-
-        // ==================== Slides 8 - 16
-
-        // basically the same as JS :)
-
-
-//            String caseSwitch = "Fred";
-//            switch (caseSwitch) {
-//                case "bob":
-//                    System.out.println("Case 1");
-//                    break;
-//                case "fred":
-//                    System.out.println("Case 2");
-//                    break;
-//                default :
-//                    System.out.println("Default case");
-//                    break;
-//            }
-
-
-
-
+//        System.out.print("|" + input + "|")
+//         convert word to pig latin word (assume word doesn't begin with a vowel or end in ay
+        //String word1 = "cat";
+        //String pigLatinWord = word1
+        //    .trim()
+        //    .toLowerCase()
+        //    .substring(1)
+        //    .concat(word1.substring(0, 1).toLowerCase())
+        //    .concat("ay");
+        //System.out.println(pigLatinWord)
 
     }
 }
