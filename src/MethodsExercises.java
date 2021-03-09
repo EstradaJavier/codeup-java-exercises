@@ -7,22 +7,22 @@ public class MethodsExercises {
 //        Create four separate methods. Each will perform an arithmetic operation:
 //        Each function needs to take two parameters/arguments so that the operation can be performed.
 //
-        System.out.println (Addition (4,5));
-        System.out.println (Subtraction (1,4));
-        System.out.println (MultiplicationMethod (3,413));
-        System.out.println (DivisionMethod (4,121));
-        System.out.println (Mod (7,14));
+//        System.out.println (Addition (4,5));
+//        System.out.println (Subtraction (1,4));
+//        System.out.println (MultiplicationMethod (3,413));
+//        System.out.println (DivisionMethod (4,121));
+//        System.out.println (Mod (7,14));
     }
 //
 //        Addition
-            public static double Addition(double one, double two) {
-                return one + two;
-            }
+//            public static double Addition(double one, double two) {
+//                return one + two;
+//            }
 
 //        Subtraction
-            public static double Subtraction(double one, double two) {
-            return one - two;
-            }
+//            public static double Subtraction(double one, double two) {
+//            return one - two;
+//            }
 
 //        Multiplication
 //            public static double MultiplicationMethod(double one, double two) {
@@ -30,14 +30,14 @@ public class MethodsExercises {
 //            }
 
 //        Division
-            public static double DivisionMethod(double one, double two) {
-                return one / two;
-            }
+//            public static double DivisionMethod(double one, double two) {
+//                return one / two;
+//            }
 
 //        Mod - Add a modulus method that finds the modulus of two numbers.
-            public static double Mod(double one, double two) {
-                return one % two;
-            }
+//            public static double Mod(double one, double two) {
+//                return one % two;
+//            }
 
 //        Bonus
 //
@@ -50,16 +50,13 @@ public class MethodsExercises {
 //
 //        Create a method that validates that user input is in a certain range
 //          The method signature should look like this:
-            public static int getInteger(int min, int max) {
 
-            }
+//            public static int getInteger(int min, int max) {
+//                System.out.print("Enter a number between 1 and 10: ");
+//                int userInput = getInteger(1, 10);
+//            }
 
 //          and is used like this:
-
-          System.out.print("Enter a number between 1 and 10: ");
-
-            int userInput = getInteger(1, 10);
-
 //        If the input is invalid, prompt the user again.
 //          Calculate the factorial of a number.
 //
