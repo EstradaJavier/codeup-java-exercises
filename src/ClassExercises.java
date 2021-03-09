@@ -7,7 +7,7 @@ public class ClassExercises {
 //        System.out.println(one.equals(two));
 
             // This works correct
-//        .equalsIgnoreCase(String anotherStrin
+//        .equalsIgnoreCase(String anotherString
 //        String greeting = "howdy";
 //        System.out.println(greeting.equalsIgnoreCase("HoWDy"));
 
