@@ -14,27 +14,27 @@ public class MethodsExercises {
 //        System.out.println (Mod (7,14));
     }
 //
-//        Addition
-//            public static double Addition(double one, double two) {
-//                return one + two;
-//            }
+//        TODO: Addition
+            public static double Addition(double one, double two) {
+                return one + two;
+            }
 
-//        Subtraction
+//        TODO: Subtraction
 //            public static double Subtraction(double one, double two) {
 //            return one - two;
 //            }
 
-//        Multiplication
+//        TODO:Multiplication
 //            public static double MultiplicationMethod(double one, double two) {
 //                return one * two;
 //            }
 
-//        Division
+//        TODO: Division
 //            public static double DivisionMethod(double one, double two) {
 //                return one / two;
 //            }
 
-//        Mod - Add a modulus method that finds the modulus of two numbers.
+//        TODO: Mod - Add a modulus method that finds the modulus of two numbers.
 //            public static double Mod(double one, double two) {
 //                return one % two;
 //            }

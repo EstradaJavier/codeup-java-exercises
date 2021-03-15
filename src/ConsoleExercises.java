@@ -25,17 +25,17 @@ public class ConsoleExercises {
             // that value in an int variable using the
             // nextInt method.
 
-        Scanner sc = new Scanner(System.in); // Declaring the Scanner and assign it to "sc".
-        sc.useDelimiter("-");                //
-        String first = sc.next();             // Obtaining value frm user input and assigning to first.
-        String second = sc.next();           // Obtaining value frm user input and assigning to second.
-        String third = sc.next();            // Obtaining value frm user input and assigning to third.
-
-        System.out.println(first + second + third); // Printing to the terminal.
-
-            System.out.print("Please enter an integer: ");
-            int userInt = sc.nextInt();
-            System.out.println(userInt);
+//        Scanner sc = new Scanner(System.in); // Declaring the Scanner and assign it to "sc".
+//        sc.useDelimiter("-");                //
+//        String first = sc.next();             // Obtaining value frm user input and assigning to first.
+//        String second = sc.next();           // Obtaining value frm user input and assigning to second.
+//        String third = sc.next();            // Obtaining value frm user input and assigning to third.
+//
+//        System.out.println(first + second + third); // Printing to the terminal.
+//
+//            System.out.print("Please enter an integer: ");
+//            int userInt = sc.nextInt();
+//            System.out.println(userInt);
 //
 //        // What happens if you input something that is not an integer
 ////             input mismatch exception
@@ -75,7 +75,7 @@ public class ConsoleExercises {
 //            String lengthInput = sc.nextLine();
 //            System.out.println("Enter the width: ");
 //            String widthInput = sc.nextLine();
-
+//
 //
 //            double length = Double.parseDouble(lengthInput);
 //            double width = Double.parseDouble(widthInput);
