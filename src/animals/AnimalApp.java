@@ -1,8 +1,8 @@
-package Animals;
+package animals;
 
-import animals.canine.Dog;
-import animals.canine.Wolf;
+import animals.Wolf;
 import java.util.Scanner;
+
 public class AnimalApp {
     public static void main(String[] args) {
         getDetails();
