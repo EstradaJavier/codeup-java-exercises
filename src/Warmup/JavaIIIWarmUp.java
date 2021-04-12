@@ -1,34 +1,15 @@
 package Warmup;
 
 public class JavaIIIWarmUp {
-
-
-    // Java program to check if the first and the last
-// characters of a string are equal or not.
-    class GFG {
-        public static int areCornerEqual(String s)
-        {
-            int n = s.length();
-            if (n < 2)
-                return -1;
-            if (s.charAt(0) == s.charAt(n-1))
-                return 1;
-            else
-                return 0;
-        }
-
-        // Driver code
-        public static void main(String[] args)
-        {
-            String s = "GfG";
-            int res = areCornerEqual(s);
-            if (res == -1)
-                System.out.println("Invalid Input");
-            else if (res == 1)
-                System.out.println("Equal");
-            else
-                System.out.println("Not Equal");
-        }
+    public static void main(String[] args) {
+        System.out.println(sameFirstAndLast("Bob"));
+        System.out.println(sameFirstAndLast("steve"));
+        System.out.println(sameFirstAndLast("refrigerator"));
+        System.out.println(sameFirstAndLast("q2kdj3vq"));
     }
-
+    public static boolean sameFirstAndLast(String input) {
+        char first = Character.toLowerCase(input.charAt(0));
+        char last = Character.toLowerCase(input.charAt(input.length() - 1));
+        return first == last;
+    }
 }
