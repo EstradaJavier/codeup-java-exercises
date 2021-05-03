@@ -1,1 +1,1 @@
-# codup-java-exercises
+# codeup-java-exercises
