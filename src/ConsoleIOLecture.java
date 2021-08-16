@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
 public class ConsoleIOLecture {
-
-
         public static void main(String[] args) {
 
 
@@ -12,7 +10,7 @@ public class ConsoleIOLecture {
 //            System.out.println("here");
 //            System.out.println("there");
 
-            // is equivalent to this:
+            // this equivalent to this:
 //            System.out.print("here\n");
 //            System.out.print("there\n");
 
@@ -48,9 +46,9 @@ public class ConsoleIOLecture {
 
             // ================================== USER INPUT
                 Scanner sc = new Scanner(System.in);
-                System.out.println("Please enter your fist name : ");
+                System.out.print("Please enter your fist name : ");
                 String userFname = sc.next();
-                System.out.println("Please enter your last name!");
+                System.out.print("Please enter your last name : ");
                 String userLname = sc.next();
                 System.out.printf("Hello, %s %s ", userFname, userLname);
 

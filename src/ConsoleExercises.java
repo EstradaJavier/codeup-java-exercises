@@ -33,7 +33,9 @@ public class ConsoleExercises {
 //
 //        System.out.println(first + second + third); // Printing to the terminal.
 //
-//            System.out.print("Please enter an integer: ");
+        Scanner sc = new Scanner(System.in); // Declaring the Scanner and assign it to "sc".
+
+//         System.out.print("Please enter an integer: ");
 //            int userInt = sc.nextInt();
 //            System.out.println(userInt);
 //
