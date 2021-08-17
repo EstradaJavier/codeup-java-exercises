@@ -43,13 +43,13 @@ public class ConsoleExercises {
 ////             input mismatch exception
 //
 //        // Prompt a user to enter 3 words and store each of them in a separate variable, then display them back, each on a newline.
-//             System.out.print("Enter 3 words: ");
-//             String word1 = sc.next();
-//             String word2 = sc.next();
-//             String word3 = sc.next();
-//             System.out.println(word1);
-//             System.out.println(word2);
-//             System.out.println(word3);
+             System.out.print("Enter 3 words: ");
+             String word1 = sc.next();
+             String word2 = sc.next();
+             String word3 = sc.next();
+             System.out.println(word1);
+             System.out.println(word2);
+             System.out.println(word3);
 
 //        // What happens if you enter less than 3 words?
 ////             It won't let you continue with out finishing the inputs
